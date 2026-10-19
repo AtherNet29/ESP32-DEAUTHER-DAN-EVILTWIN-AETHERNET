@@ -42,7 +42,7 @@
 
 <h3>🔐 Security Features</h3>
 <ul>
-  <li><b>MAC Whitelist Lock:</b> Firmware hard-locks to a single allowed MAC address. Unauthorized devices trigger an infinite LED blink loop, preventing firmware theft.</li>
+  <li><b>Trial Limitation: Firmware is limited to 10 minutes of usage. After expiration, all features are permanently disabled, WiFi is turned off, and the OLED displays a "TRIAL EXPIRED" lock screen. The lock persists across reboots via EEPROM marker.</li>
   <li><b>Factory Reset Trigger:</b> Broadcasting SSID <code>SETELAN_AWAL</code> near the device within 30 seconds of boot will trigger a full configuration reset.</li>
 </ul>
 
@@ -178,8 +178,8 @@
 </table>
 
 <div align="center">
-  <h2>💎 Premium / Custom Build</h2>
-  <p>This firmware is fully open and configurable. For custom hardware variants, additional features, or commercial licensing, contact the developer directly.</p>
+  <h2> Get the Full / Premium Version</h2>
+  <p>The file available in this repository is a Trial Version, strictly limited to 10 Minutes of usage time for initial demonstration. Once the trial expires, the device is permanently locked and displays a "TRIAL EXPIRED" message on both Web and OLED.</p>
   <br>
   <a href="https://t.me/+6283141852690">
   <img src="https://img.shields.io/badge/Contact-Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white" />
