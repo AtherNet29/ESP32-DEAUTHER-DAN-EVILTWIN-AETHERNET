@@ -42,7 +42,7 @@
 
 <h3>🔐 Security Features</h3>
 <ul>
-  <li><b>Trial Limitation: Firmware is limited to 10 minutes of usage. After expiration, all features are permanently disabled, WiFi is turned off, and the OLED displays a "TRIAL EXPIRED" lock screen. The lock persists across reboots via EEPROM marker.</li>
+  <li><b>Trial Limitation: Firmware is limited to 10 minutes of usage. After expiration, all features are permanently disabled, WiFi is turned off, and the OLED displays a "TRIAL EXPIRED" lock screen. The lock persists across reboots.</li>
   <li><b>Factory Reset Trigger:</b> Broadcasting SSID <code>SETELAN_AWAL</code> near the device within 30 seconds of boot will trigger a full configuration reset.</li>
 </ul>
 
