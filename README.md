@@ -1,12 +1,12 @@
 <div align="center">
-  <img src="https://img.shields.io/badge/Version-1.2_PRO-00ff00?style=for-the-badge&logo=esp32" />
+  <img src="https://img.shields.io/badge/Version-1.2_TRIAL-00ff00?style=for-the-badge&logo=esp32" />
   <img src="https://img.shields.io/badge/Chip-ESP32_(ESP32Dev)-blue?style=for-the-badge&logo=espressif" />
   <img src="https://img.shields.io/badge/Status-ACTIVE-success?style=for-the-badge" />
   <br><br>
   <img src="https://img.shields.io/badge/🛡️_Educational_Purpose_Only-IMPORTANT-red" />
 </div>
 
-<h1 align="center">⚡ AETHERNET PRO (ESP32 / JAMBLUE V2.2)</h1>
+<h1 align="center">⚡ AETHERNET TRIAL (ESP32 / JAMBLUE V 1.2)</h1>
 <p align="center">
   <b>Advanced WiFi (2.4GHz) & Bluetooth Security Audit Tool</b><br>
   <i>Dual-module design integrating WiFi deauthentication, Evil Twin, Rogue AP, Beacon Spam, and dual NRF24L01+ Bluetooth jamming.</i>
