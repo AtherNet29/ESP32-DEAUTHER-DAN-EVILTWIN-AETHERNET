@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://img.shields.io/badge/Version-2.2.6_PRO-00ff00?style=for-the-badge&logo=esp32" />
+  <img src="https://img.shields.io/badge/Version-1.2_PRO-00ff00?style=for-the-badge&logo=esp32" />
   <img src="https://img.shields.io/badge/Chip-ESP32_(ESP32Dev)-blue?style=for-the-badge&logo=espressif" />
   <img src="https://img.shields.io/badge/Status-ACTIVE-success?style=for-the-badge" />
   <br><br>
@@ -42,7 +42,7 @@
 
 <h3>🔐 Security Features</h3>
 <ul>
-  <li><b>MAC Whitelist Lock:</b> Firmware hard-locks to a single allowed MAC address (<code>68:09:47:4E:85:7C</code>). Unauthorized devices trigger an infinite LED blink loop, preventing firmware theft.</li>
+  <li><b>MAC Whitelist Lock:</b> Firmware hard-locks to a single allowed MAC address. Unauthorized devices trigger an infinite LED blink loop, preventing firmware theft.</li>
   <li><b>Factory Reset Trigger:</b> Broadcasting SSID <code>SETELAN_AWAL</code> near the device within 30 seconds of boot will trigger a full configuration reset.</li>
 </ul>
 
