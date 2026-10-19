@@ -160,48 +160,6 @@
   <li>Flash the SPIFFS data partition if templates or config fail to load.</li>
 </ol>
 
-<hr>
-
-<h2>⚙️ Configuration & Defaults</h2>
-<table border="1" style="border-collapse: collapse; width: 100%; text-align: left; padding: 8px;">
-  <tr style="background-color: #f2f2f2;">
-    <th>Setting</th>
-    <th>Default Value</th>
-    <th>Notes</th>
-  </tr>
-  <tr><td>AP SSID</td><td><code>AETHERNET</code></td><td>Configurable via web UI</td></tr>
-  <tr><td>AP Password</td><td><code>(empty)</code></td><td>Open network by default</td></tr>
-  <tr><td>Rogue AP SSID</td><td><code>Public Wifi</code></td><td>Configurable via web UI</td></tr>
-  <tr><td>Web UI IP</td><td><code>192.168.1.1</code></td><td>Fixed</td></tr>
-  <tr><td>DNS Captive Portal</td><td>Port 53</td><td>Auto-redirect all DNS to AP</td></tr>
-  <tr><td>MAC Whitelist</td><td><code>68:09:47:4E:85:7C</code></td><td>Hard-coded security lock</td></tr>
-  <tr><td>Screen Timeout</td><td><code>0 (always on)</code></td><td>Configurable 0–255 minutes</td></tr>
-  <tr><td>EEPROM Size</td><td>140 bytes</td><td>Stores SSID, password, theme, rogue SSID, timeout</td></tr>
-  <tr><td>Max Networks Stored</td><td>16</td><td>Per scan cycle</td></tr>
-  <tr><td>Max Log Entries</td><td>50</td><td>Rolling buffer, saved to SPIFFS</td></tr>
-</table>
-
-<hr>
-
-<h2>🎛️ OLED Menu Structure</h2>
-<pre>
-┌─────────────────────────────────┐
-│  PILIH TARGET  (Scan Networks)  │
-├─────────────────────────────────┤
-│  DEAUTHER                       │
-│  EVIL TWIN                      │
-│  ROGUE AP                       │
-│  BEACON SPAM                    │
-│  JAMBLUE                        │
-│  MONITOR                        │
-│  REBOOT                         │
-│  PENGATURAN (Settings)          │
-└─────────────────────────────────┘
-</pre>
-<p><i>Cover-flow style navigation with animated icons. Press <b>SELECT</b> to activate, <b>BACK</b> to deactivate or exit. Menu auto-hides after 60s of inactivity.</i></p>
-
-<hr>
-
 <h2>🌐 Web Interface Tabs</h2>
 <table border="1" style="border-collapse: collapse; width: 100%; text-align: left; padding: 8px;">
   <tr style="background-color: #f2f2f2;">
@@ -218,36 +176,6 @@
   <tr><td><b>INFO</b></td><td>Legal disclaimer and about info</td></tr>
   <tr><td><b>REBOOT</b></td><td>Restart ESP32</td></tr>
 </table>
-
-<hr>
-
-<h2>📁 Project Structure</h2>
-<pre>
-src/
-├── main.cpp          # Main firmware (setup, loop, web server, attack logic)
-├── Main.h            # Header with extern declarations & function prototypes
-└── Button.cpp        # OLED menu rendering & button handling logic
-</pre>
-
-<hr>
-
-<h2>📚 Library Dependencies</h2>
-<ul>
-  <li><code>Adafruit GFX Library @ 1.12.6</code></li>
-  <li><code>Adafruit SSD1306 @ 2.5.16</code></li>
-  <li><code>RF24 @ 1.5.0</code></li>
-  <li><code>ezButton @ 1.0.6</code> (optional)</li>
-  <li><code>WiFi @ 2.0.0</code> (built-in)</li>
-  <li><code>Wire @ 2.0.0</code> (built-in)</li>
-  <li><code>DNSServer @ 2.0.0</code> (built-in)</li>
-  <li><code>EEPROM @ 2.0.0</code> (built-in)</li>
-  <li><code>FS @ 2.0.0</code> + <code>SPIFFS @ 2.0.0</code> (built-in)</li>
-  <li><code>SPI @ 2.0.0</code> (built-in)</li>
-  <li><code>Update @ 2.0.0</code> (built-in)</li>
-  <li><code>WebServer @ 2.0.0</code> (built-in)</li>
-</ul>
-
-<hr>
 
 <div align="center">
   <h2>💎 Premium / Custom Build</h2>
