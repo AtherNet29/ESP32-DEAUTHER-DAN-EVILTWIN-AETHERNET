@@ -151,15 +151,6 @@
   <li>The module will automatically reboot and broadcast <b>AETHERNET</b>.</li>
 </ul>
 
-<h3>❓ What if the SSID does not appear?</h3>
-<ol>
-  <li>ESP32 might be stuck in bootloader mode. Press the <b>EN/RST button</b> once after upload completes.</li>
-  <li>Check wiring, specifically NRF24L01 VCC/GND shorts, which prevent booting.</li>
-  <li>Verify OLED wiring — a shorted SDA/SCL line can halt I2C initialization at boot (<code>display.begin()</code> loops forever on failure).</li>
-  <li>Verify your ESP32's MAC address matches the whitelist (<code>68:09:47:4E:85:7C</code>). If not, the device will enter LED blink lock mode. Edit <code>allowedMAC</code> in <code>main.cpp</code> to match your chip's MAC.</li>
-  <li>Flash the SPIFFS data partition if templates or config fail to load.</li>
-</ol>
-
 <h2>🌐 Web Interface Tabs</h2>
 <table border="1" style="border-collapse: collapse; width: 100%; text-align: left; padding: 8px;">
   <tr style="background-color: #f2f2f2;">
