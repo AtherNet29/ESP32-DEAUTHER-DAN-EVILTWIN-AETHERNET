@@ -210,5 +210,5 @@
 
 <div align="center">
   <br>
-  <sub>Built with ❤️ by AETHERNET Developer Team — ESP32 Edition (JAMBLUE V2.2 PRO)</sub>
+  <sub>Built with ❤️ by AETHERNET Developer Team — ESP32 Edition (JAMBLUE V 1.2 Trial)</sub>
 </div>
